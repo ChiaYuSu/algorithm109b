@@ -23,10 +23,12 @@
             - Worst case?
             - Average case?
             - (Best) case?
-- Better algorithms:
+- Better algorithms?
     - How:
         - **Faster** algorithms?
         - Algorithms with **less space** requirement?
     - Optimality (最佳解):
         - Prove that an algorithm is **best possible** and **optimal**?
         - Establish a **lower bound**?
+- Applications?
+    - **Everywhere in computing!**
