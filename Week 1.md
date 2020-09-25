@@ -23,14 +23,14 @@
 - [Cormen, Leiserson, Rivest, Stein, Introduction to Algorithms, 3rd Ed., McGraw Hill / MIT Press, 2009](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
 
 ## Course contents
-- Algorithmic fundamentals: 演算法基礎
-- Sorting: 排序
-- Data structures: 資料結構
-- Advanced design techniques: 設計技術
-- Graph algorithms: 圖形演算法
-- Multithreaded algorithms: 多線程演算法
-- NP-completeness: NP 完全
-- Other algorithms: 其他
+- Algorithmic fundamentals (演算法基礎)
+- Sorting (排序)
+- Data structures (資料結構)
+- Advanced design techniques (設計技術)
+- Graph algorithms (圖形演算法)
+- Multithreaded algorithms (多線程演算法)
+- NP-completeness (NP 完全)
+- Other algorithms (其他)
 
 ## Grading policy and key dates
 - Grading:
