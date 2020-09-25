@@ -77,5 +77,5 @@
 
 ## Acknowledgement
 - National Taiwan University Algorithms
-    - Prof. Shao-Yun Fang boss
+    - Prof. Shao-Yun Fang's boss
         - Yao-Wen Chang (張耀文)
