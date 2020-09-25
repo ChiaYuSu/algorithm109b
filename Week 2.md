@@ -13,11 +13,11 @@
 ### On Algorithms
 - Algorithm: A well-defined procedure for transforming some **input** to a desired **output**.
 - Major concerns:
-    - Correctness:
+    - Correctness (正確的):
         - Does it **halt (停止)**? 
         - Is it **correct (正確)**? 
         - Is it **stable (穩定性，執行 100 次都是一樣的結果)**? 
-    - Efficiency:
+    - Efficiency (有效率的):
         - **Time** complexity (時間複雜度)? 
         - **Space** complexity (空間複雜度，Ram 夠不夠用)? 
             - Worst case?
@@ -27,6 +27,6 @@
     - How:
         - **Faster** algorithms?
         - Algorithms with **less space** requirement?
-    - Optimality:
+    - Optimality (最佳解):
         - Prove that an algorithm is **best possible** and **optimal**?
         - Establish a **lower bound**?
