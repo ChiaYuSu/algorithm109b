@@ -262,7 +262,7 @@ And so on...
         - Complexity: **high**
 
 ### Computational Complexity (計算複雜度)
-- Computational complexity: an abstract measure of the **time** and **space** necessary to execute an algorithm as functions of its **"input size"**
+- Computational complexity: an abstract measure of the **time** and **space** necessary to execute an algorithm as functions of its **"input size" or called "data size"**
     - Sort *n* words of bounded length => input size: *n*
     - The input is the graph *G(V, E)* => input size: *|V|* and *|E|*
 - Runtime comparison
