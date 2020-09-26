@@ -209,7 +209,7 @@ And so on...
 - **Def:** *f(n) = θ(g(n))* if ∃ *c<sub>1</sub>, c<sub>2</sub>* > 0 and *n<sub>0</sub>* > 0 such that ***0 ≤ c<sub>1</sub>g(n) ≤ f(n) ≤ c<sub>2</sub>g(n)*** for all *n ≥ n<sub>0</sub>*
 - Examples:
     - *3n<sup>2</sup> + n = θ(n<sup>2</sup>)*?
-        - Yes! <sub><img src="Week 2\theta1.PNG" height="28px"/></sub>
+        - Yes! <sub><img src="Week 2\theta1.PNG" height="25px"/></sub>
     - *3n<sup>2</sup> + n = θ(n)*?
         - No! <sub><img src="Week 2\theta2.PNG" height="25px"/></sub>
     - *3n<sup>2</sup> + n = θ(n<sup>3</sup>)*?
