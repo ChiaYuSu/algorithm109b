@@ -123,8 +123,8 @@ And so on...
 
 ### Loop Invariant of Insertion Sort
 - **Initialization:** *j = 2* => *A[1]* is sorted (k = 1 成立；k = (j = 2) 成立)
-    - **Maintenance:** Move *A[j-1], A[j-2], ...* one position to the right until the position for *A[j]* is found (k = n-1 成立，證明 k = n 也成立；k = (j-1) 成立，證明 k = j 也成立)
-    - **Termination:** *j = **n+1*** => *A[1...n]* is sorted. Hence the entire array is sorted! (k = n 成立；k = j 成立)
+- **Maintenance:** Move *A[j-1], A[j-2], ...* one position to the right until the position for *A[j]* is found (k = n-1 成立，證明 k = n 也成立；k = (j-1) 成立，證明 k = j 也成立)
+- **Termination:** *j = **n+1*** => *A[1...n]* is sorted. Hence the entire array is sorted! (k = n 成立；k = j 成立)
 
 ### Exact Analysis of Insertion Sort (精確分析)
 - Pseudo code:
