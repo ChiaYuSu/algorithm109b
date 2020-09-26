@@ -177,3 +177,10 @@ And so on...
         - Yes! <sub><img src="Week 2\o3.PNG" height="25px"/></sub>
     - *3n<sup>2</sup> + n = cn<sup>2</sup>*? **(⭐Compulsory exam)**
         - **Take *c* = 4, n<sub>0</sub> = 1**
+
+### *Ω*: Lower Bounding Function
+- **Def:** *f(n) = Ω(g(n))* if ∃ *c* > 0 and *n<sub>0</sub>* > 0 such that ***0 ≤ cg(n) ≤ f(n)*** for all *n ≥ n<sub>0</sub>*
+- Intuition: *f(n)* **≥** *g(n)* when we ignore constant multiples and small values of *n* 
+- How to **verify** *Ω* (Big-Omega) relationships?
+    - *f(n) = Ω(g(n))* implies that <sub><img src="Week 2\lower_bound.PNG" height="25px"/></sub> for some **c ≥ 0**, if the limit exists
+    <img src="Week 2\lower_bound_graph.PNG" weight="550px"/>
