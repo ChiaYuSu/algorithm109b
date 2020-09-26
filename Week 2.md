@@ -142,4 +142,4 @@ And so on...
 - **Best case:** If the input is already sorted, all *t<sub>j</sub>'s* are 1
     - Linear (線性): *T(n) = (C<sub>1</sub> + C<sub>2</sub> + C<sub>4</sub> + C<sub>5</sub> + C<sub>8</sub>)n - (C<sub>2</sub> + C<sub>4</sub> + C<sub>5</sub> + C<sub>8</sub>)* 
 - **Worst case:** If the array is in reverse sorted order, *t<sub>j</sub>* = *j*, ∀ *j*
-    - Quadratic (二次方): *T(n) = (C<sub>5</sub> ÷ 2 + C<sub>6</sub> ÷ 2 + C<sub>7</sub> ÷ 2)n<sup>2</sup> + (C<sub>1</sub> + C<sub>2</sub> + C<sub>4</sub> + C<sub>5</sub> ÷ 2 - C<sub>6</sub> ÷ 2 - C<sub>7</sub> ÷ 2 + C<sub>8</sub>) - (C<sub>2</sub> + C<sub>4</sub> + C<sub>5</sub> + C<sub>8</sub>)*
+    - Quadratic (二次方): *T(n) = <sub><img src="Week 2\c5+c6+c7.PNG" height="25px"/></sub>n<sup>2</sup> + (C<sub>1</sub> + C<sub>2</sub> + C<sub>4</sub> + <sub><img src="Week 2\c5-c6-c7.PNG" height="25px"/></sub> + C<sub>8</sub>) - (C<sub>2</sub> + C<sub>4</sub> + C<sub>5</sub> + C<sub>8</sub>)*
