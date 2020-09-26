@@ -143,3 +143,13 @@ And so on...
     - Linear (線性): *T(n) = (C<sub>1</sub> + C<sub>2</sub> + C<sub>4</sub> + C<sub>5</sub> + C<sub>8</sub>)n - (C<sub>2</sub> + C<sub>4</sub> + C<sub>5</sub> + C<sub>8</sub>)* 
 - **Worst case:** If the array is in reverse sorted order, *t<sub>j</sub>* = *j*, ∀ *j*
     - Quadratic (二次方): *T(n) = <sub><img src="Week 2\c5+c6+c7.PNG" height="25px"/></sub>n<sup>2</sup> + (C<sub>1</sub> + C<sub>2</sub> + C<sub>4</sub> + <sub><img src="Week 2\c5-c6-c7.PNG" height="25px"/></sub> + C<sub>8</sub>) - (C<sub>2</sub> + C<sub>4</sub> + C<sub>5</sub> + C<sub>8</sub>)*
+- **Exact analysis is often hard and tedious!** (精確的分析通常很難而且乏味)
+
+### Asymptotic Analysis
+- Asymptotic analysis looks at growth of *T(n)* as *n* -> ∞
+- θ notation: drop low-order terms and ignore the leading constant
+    - E.g.: *T(n) = 8n<sup>3</sup> - 4n<sup>2</sup> + 5n - 2 = θ(n<sup>3</sup>)*
+- As *n* grows large, lower-order θ algorithms outperform higher-order ones
+    - E.g.: For large inputs, a θ(n<sup>2</sup>) algorithm will run more quickly in the worst case than a θ(n<sup>3</sup>) algorithm
+- Asymptotic analysis of insertion sort
+    - **Worst case:** Input reverse sorted, **while** loop is executed *j* times each iteration: <sub><img src="Week 2\worst.PNG" height="25px"/></sub>
