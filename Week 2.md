@@ -256,7 +256,7 @@ And so on...
     - **key: Both calculations take log**
     - *n<sup>2</sup>*:
         - *lg(n<sup>2</sup>) = 2 lg n*
-        - Complexity: low
+        - Complexity: **low**
     - *n<sup>lg n</sup>*:
         - *lg(n<sup>lg n</sup>) = lg n × lg n = (lg n)<sup>2</sup>*
-        - Complexity: high
+        - Complexity: **high**
