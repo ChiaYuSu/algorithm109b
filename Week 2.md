@@ -153,5 +153,6 @@ And so on...
     - E.g.: For large inputs, a θ(n<sup>2</sup>) algorithm will run more quickly in the worst case than a θ(n<sup>3</sup>) algorithm
 - Asymptotic analysis of insertion sort (插入排序的漸近分析)
     - **Worst case:** Input reverse sorted, **while** loop is executed *j* times each iteration: <sub><img src="Week 2\worst.PNG" height="20px"/></sub>
-        - Calculation process
+        - Calculation process: <sub><img src="Week 2\worst_process.PNG" height="25px"/></sub>
     - **Average case:** **While** loop is executed about *j/2* times each iteration: <sub><img src="Week 2\average.PNG" height="25px"/></sub>
+        - Calculation process: <sub><img src="Week 2\average_process.PNG" height="25px"/></sub>
