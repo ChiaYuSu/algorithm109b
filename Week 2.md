@@ -253,7 +253,7 @@ And so on...
     - *n<sup>2</sup>*
     - *n<sup>lg n</sup>*
 - Calculation process:
-    - **key: Both calculations take log**
+    - **key: Both formula take log**
     - *n<sup>2</sup>*:
         - *lg(n<sup>2</sup>) = 2 lg n*
         - Complexity: **low**
