@@ -135,4 +135,4 @@ And so on...
 - *t<sub>j</sub>*: # of times the while loop test for value *j* (i.e., i + # of elements that have to be slid right to insert the *j*-th item)
 - Line 5 is executed *t<sub>2</sub>* + *t<sub>3</sub>* + ... + *t<sub>n</sub>* times
 - Line 6 and Line 7 are executed (*t<sub>2</sub>* - 1) + (*t<sub>3</sub>* - 1) + ... + (*t<sub>n</sub>* - 1) times
-- Runtime: *T(<sub>n</sub>)* = *c<sub>1</sub>n* + *c<sub>2</sub>(n-1)* + *c<sub>4</sub>(n-1)* + *c<sub>5</sub>*<img src="Week 2\c5.PNG" height="20px"/>
+- Runtime: *T(<sub>n</sub>)* = *c<sub>1</sub>n* + *c<sub>2</sub>(n-1)* + *c<sub>4</sub>(n-1)* + *c<sub>5</sub>*<sub><img src="Week 2\c5.PNG" height="25px"/></sub>
