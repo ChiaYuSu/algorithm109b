@@ -279,8 +279,8 @@ And so on...
 
 ### Runtime Analysis (運行時間分析)
 - Two rules:
-    - A number of operations are performed in an algorithm, the runtime is dominated by the most expensive (complexity very high) operation
-    - If an operation is repeatedly performed a number of times, the total runtime is the runtime of the operation multiplied by the iteration count
+    - A number of operations are performed in an algorithm, the runtime is dominated by the most expensive (complexity very high) operation (一個算法中可能有很多算式，運行時間長短由複雜度最高的做表示)
+    - If an operation is repeatedly performed a number of times, the total runtime is the runtime of the operation multiplied by the iteration count (如果算式重複執行多次，總運行時間是每個算式的運行時間乘以迭代計數)
 - Examples:
     - *T(n) = O(max(T<sub>1</sub>(n), T<sub>2</sub>(n)))*
     ```c++
