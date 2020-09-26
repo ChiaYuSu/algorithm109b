@@ -191,9 +191,9 @@ And so on...
     - *3n<sup>2</sup> + n = Ω(n<sup>2</sup>)*?
         - Yes! <sub><img src="Week 2\omega1.PNG" height="28px"/></sub>
     - *3n<sup>2</sup> + n = Ω(n)*?
-        - No! <sub><img src="Week 2\omega2.PNG" height="25px"/></sub>
+        - Yes! <sub><img src="Week 2\omega2.PNG" height="25px"/></sub>
     - *3n<sup>2</sup> + n = Ω(n<sup>3</sup>)*?
-        - Yes! <sub><img src="Week 2\omega3.PNG" height="25px"/></sub>
+        - No! <sub><img src="Week 2\omega3.PNG" height="25px"/></sub>
     - *3n<sup>2</sup> + n ≥ cn<sup>2</sup>*? **(⭐Compulsory exam)**
         - **Take *c* = 2, n<sub>0</sub> = 1**
 
@@ -204,3 +204,15 @@ And so on...
     - Show both "Big-Oh" (*O*) and "Big-Omega" (*Ω*) relationships
     - *f(n) = θ(g(n))* implies that <sub><img src="Week 2\tightly_bound.PNG" height="30px"/></sub> for some **c > 0**, if the limit exists
     <img src="Week 2\tightly_bound_graph.PNG" weight="550px"/>
+
+### Theta Examples
+- **Def:** *f(n) = θ(g(n))* if ∃ *c<sub>1</sub>, c<sub>2</sub>* > 0 and *n<sub>0</sub>* > 0 such that ***0 ≤ c<sub>1</sub>g(n) ≤ f(n) ≤ c<sub>2</sub>g(n)*** for all *n ≥ n<sub>0</sub>*
+- Examples:
+    - *3n<sup>2</sup> + n = θ(n<sup>2</sup>)*?
+        - Yes! <sub><img src="Week 2\theta1.PNG" height="28px"/></sub>
+    - *3n<sup>2</sup> + n = θ(n)*?
+        - No! <sub><img src="Week 2\theta2.PNG" height="25px"/></sub>
+    - *3n<sup>2</sup> + n = θ(n<sup>3</sup>)*?
+        - No! <sub><img src="Week 2\theta3.PNG" height="25px"/></sub>
+    - *c<sub>1</sub>n<sup>2</sup> ≤ 3n<sup>2</sup> + n ≤ c<sub>2</sub>n<sup>2</sup>*? **(⭐Compulsory exam)**
+        - **Take *c<sub>1</sub>* = 2, *c<sub>2</sub>* = 4, n<sub>0</sub> = 1**
