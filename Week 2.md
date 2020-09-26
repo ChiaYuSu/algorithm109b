@@ -152,5 +152,5 @@ And so on...
 - As *n* grows large, lower-order θ algorithms outperform higher-order ones
     - E.g.: For large inputs, a θ(n<sup>2</sup>) algorithm will run more quickly in the worst case than a θ(n<sup>3</sup>) algorithm
 - Asymptotic analysis of insertion sort
-    - **Worst case:** Input reverse sorted, **while** loop is executed *j* times each iteration: <sub><img src="Week 2\worst.PNG" height="25px"/></sub>
+    - **Worst case:** Input reverse sorted, **while** loop is executed *j* times each iteration: <sub><img src="Week 2\worst.PNG" height="20px"/></sub>
     - **Average case:** **While** loop is executed about *j/2* times each iteration: <sub><img src="Week 2\average.PNG" height="25px"/></sub>
