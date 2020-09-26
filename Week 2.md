@@ -1,12 +1,13 @@
 # Week 2 write-up
 
 ## Unit 1: Algorithmic Fundamentals
-- Course contents:
-    - On algorithms (關於演算法)
-    - Mathematical foundations (數學基礎) 
-    - Asymptotic notation (漸進符號)
-    - Growth of functions (增長函數)
-    - Recurrences (遞迴關係式)
+
+### Course contents
+- On algorithms (關於演算法)
+- Mathematical foundations (數學基礎) 
+- Asymptotic notation (漸進符號)
+- Growth of functions (增長函數)
+- Recurrences (遞迴關係式)
 
 ### On Algorithms
 - Algorithm: A well-defined procedure for transforming some **input** to a desired **output**.
@@ -58,3 +59,53 @@
         - When there are 20 nodes, how many combinations are there?
 - No known efficient, correct algorithm for TSP! (目前尚未找到有效率且正確的 TSP 算法)
     - TSP is **"NP-complete (NPC)"** (不存在同時有效率且正確的解)
+
+### Example of Permutations
+- 5! = 120 permutations for only 5 points
+<img src="Week 2\permutations.PNG" width="550px" />
+
+## Insertion Sort and Asymptotic Analysis (插入排序及漸進分析)
+
+### Sorting
+- Input: A sequence of *n* numbers <*a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub>*>
+- Output: A permutation <*a<sub>1</sub>', a<sub>2</sub>', ..., a<sub>n</sub>'*> such that *a<sub>1</sub>'* ≤ *a<sub>2</sub>'* ≤ ... ≤ *a<sub>n</sub>'*
+- Example:
+    - Input: <8, 6, 9, 7, 5, 2, 3>
+    - Output: <2, 3, 5, 6, 7, 8, 9>
+- Concerns:
+    - **Correct** and **efficient** algorithms?
+
+### Insertion Sort Illustration
+<img src="Week 2\insertion_illustration.PNG" width="550px" />
+
+- Question: What is the invariant of this sort? (插入排序法的不變性是什麼)
+
+### Insertion Sort
+- Pseudo code:
+<img src="Week 2\insertion_pseudo.PNG" width="550px" />
+
+- Graphic explanation:
+<img src="Week 2\insertion_graphic.PNG" width="550px" />
+
+- Trace code:
+```
+1  j = 2
+2  j = 2, key = 6 (A[2] = 6)
+3  
+4  i = 1, j = 2, key = 6
+5  i = 1, j = 2, key = 6 (i > 0 is True & A[i] > 6 is True, do loop)
+6  i = 1, j = 2, key = 6 (A[1] = 8, A[2] = 8)
+7  i = 0, j = 2, key = 6 (go back to line 5 => i > 0 is False & A[i] > 6 is False, jump out the loop)
+8  i = 0, j = 2, key = 6 (A[1] = 6, A[2] = 8 => go back to line 1) 
+-----
+1  j = 3
+2  j = 3, key = 9 (A[3] = 9)
+3  
+4  i = 2, j = 3, key = 9
+5  i = 2, j = 3, key = 9 (i > 0 is True & A[i] > 9 is False, don't enter the loop)
+6  
+7  
+8  i = 2, j = 3, key = 9 (A[3] = 9 => go back to line 1)
+-----
+And so on...
+```
