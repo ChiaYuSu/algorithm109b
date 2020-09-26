@@ -231,7 +231,7 @@ And so on...
 ### Asymptotic Functions
 - **Polynomial-time complexity:** *O(p(n))*,
     - *n*: the input size
-    - *p(n)*: a polynomial function of *n* ***(p(n) = n<sup>O(1)</sup>)***
+    - *p(n)*: a polynomial function of *n*
 
 | complexity | polynomial function                          | type                         | Is polynomial-time complexity |
 |------------|----------------------------------------------|------------------------------|-------------------------------|
