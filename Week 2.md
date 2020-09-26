@@ -168,3 +168,10 @@ And so on...
 
 ### Big-Oh Examples
 - **Def:** *f(n) = O(g(n))* if ∃ *c* > 0 and *n<sub>0</sub>* > 0 such that ***0 ≤ f(n) ≤ cg(n)*** for all *n ≥ n<sub>0</sub>*
+- Examples:
+    - *3n<sup>2</sup> + n = O(n<sup>2</sup>)*?
+        - Yes! <sub><img src="Week 2\o1.PNG" height="30px"/></sub>
+    - *3n<sup>2</sup> + n = O(n)*?
+        - No! <sub><img src="Week 2\o2.PNG" height="25px"/></sub>
+    - *3n<sup>2</sup> + n = O(n<sup>3</sup>)*?
+        - Yes! <sub><img src="Week 2\o3.PNG" height="25px"/></sub>
