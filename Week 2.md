@@ -217,7 +217,7 @@ And so on...
     - *c<sub>1</sub>n<sup>2</sup> ≤ 3n<sup>2</sup> + n ≤ c<sub>2</sub>n<sup>2</sup>*? **(⭐Compulsory exam)**
         - **Take *c<sub>1</sub>* = 2, *c<sub>2</sub>* = 4, n<sub>0</sub> = 1**
 
-### Algorithms with Asymptotic Notation
+### Algorithms with Asymptotic Notation **(⭐Compulsory exam)**
 - "Insertion sort is a *O(n<sup>2</sup>)* algorithm" or "The running time of insertion sort is *O(n<sup>2</sup>)* **=> Correct!**
     - The worst-case running time of insertion sort is *O(n<sup>2</sup>)*
     - For any input of size *n*, the running time is at most *cn<sup>2</sup>*
