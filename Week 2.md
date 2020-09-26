@@ -316,4 +316,7 @@ And so on...
     - **Conquer:** sort the subproblems, recursively using merge sort
     - **Combine:** merge the resulting two sorted *n*/2-element sequences
 
+### Merge Sort
+- pseudo code:
+<img src="Week 2\merge.PNG" width="550px" />
 
