@@ -159,8 +159,12 @@ And so on...
 - Those who do algorithms **don’t use exact analysis**, **only use asymptotic analysis**
 
 ### *O*: Upper Bounding Function
-- *Def:* *f(n) = O(g(n))* if ∃ *c* > 0 and *n<sub>0</sub>* > 0 such that ***0 ≤ f(n) ≤ cg(n)*** for all *n ≥ n<sub>0</sub>*
+- **Def:** *f(n) = O(g(n))* if ∃ *c* > 0 and *n<sub>0</sub>* > 0 such that ***0 ≤ f(n) ≤ cg(n)*** for all *n ≥ n<sub>0</sub>*
 - Intuition: *f(n)* **≤** *g(n)* when we ignore constant multiples and small values of *n*
-- How to **verify** *O* (Big-O) relationships?
+- How to **verify** *O* (Big-Oh) relationships?
     - *f(n) = O(g(n))* implies that <sub><img src="Week 2\upper_bound.PNG" height="25px"/></sub> for some **c ≥ 0**, if the limit exists
     <img src="Week 2\upper_bound_graph.PNG" weight="550px"/>
+
+
+### Big-Oh Examples
+- **Def:** *f(n) = O(g(n))* if ∃ *c* > 0 and *n<sub>0</sub>* > 0 such that ***0 ≤ f(n) ≤ cg(n)*** for all *n ≥ n<sub>0</sub>*
