@@ -196,3 +196,11 @@ And so on...
         - Yes! <sub><img src="Week 2\omega3.PNG" height="25px"/></sub>
     - *3n<sup>2</sup> + n ≥ cn<sup>2</sup>*? **(⭐Compulsory exam)**
         - **Take *c* = 2, n<sub>0</sub> = 1**
+
+### *θ*: Tightly Bounding Function
+- **Def:** *f(n) = θ(g(n))* if ∃ *c<sub>1</sub>, c<sub>2</sub>* > 0 and *n<sub>0</sub>* > 0 such that ***0 ≤ c<sub>1</sub>g(n) ≤ f(n) ≤ c<sub>2</sub>g(n)*** for all *n ≥ n<sub>0</sub>*
+- Intuition: *f(n)* **=** *g(n)* when we ignore constant multiples and small values of *n* 
+- How to **verify** *θ* (Theta) relationships?
+    - Show both "Big-Oh" (*O*) and "Big-Omega" (*Ω*) relationships
+    - *f(n) = θ(g(n))* implies that <sub><img src="Week 2\tightly_bound.PNG" height="25px"/></sub> for some **c > 0**, if the limit exists
+    <img src="Week 2\tightly_bound_graph.PNG" weight="550px"/>
