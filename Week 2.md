@@ -260,3 +260,6 @@ And so on...
     - *n<sup>lg n</sup>*:
         - *lg(n<sup>lg n</sup>) = lg n × lg n = (lg n)<sup>2</sup>*
         - Complexity: **high**
+
+### Computational Complexity (計算複雜度)
+- Computational complexity: an abstract measure of the **time** and **space** necessary to execute an algorithm as functions of its **"input size"**.
