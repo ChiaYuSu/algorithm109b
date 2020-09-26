@@ -109,3 +109,30 @@
 -----
 And so on...
 ```
+
+### Correctness?
+- Loop invariant (迴圈不變性)
+    - At the start of each iteration of the for loop of lines 1 to 8, subarray A[1..j-1] consists of the elements originally in A[1..j-1] but in sorted order (在 1 至 8 行的 for 循環的每次迭代開始時，子數組 A[1..j-1] 按順序**排序完成**)
+    <img src="Week 2\insertion_correctness.PNG" width="550px" />
+
+### Loop Invariant for Proving Correctness
+- We may use **loop invariants** to prove the correctness (數學歸納法證明)
+    - **Initialization:** True before the 1st iteration (k = 1 成立)
+    - **Maintenance:** If it is true an iteration, it remains true before the next iteration (k = n-1 成立，證明 k = n 也成立)
+    - **Termination:** When the loop terminates, the invariant leads to the correctness of the algorithm (k = n 成立)
+
+### Loop Invariant of Insertion Sort
+- **Initialization:** *j = 2* => *A[1]* is sorted (k = 1 成立；k = (j = 2) 成立)
+    - **Maintenance:** Move *A[j-1], A[j-2], ...* one position to the right until the position for *A[j]* is found (k = n-1 成立，證明 k = n 也成立；k = (j-1) 成立，證明 k = j 也成立)
+    - **Termination:** *j = **n+1*** => *A[1...n]* is sorted. Hence the entire array is sorted! (k = n 成立；k = j 成立)
+
+### Exact Analysis of Insertion Sort (精確分析)
+- Pseudo code:
+<img src="Week 2\insertion_exact_pseudo.PNG" width="550px" />
+
+- The for loop is executed (n-1) + 1 times. (Why?)
+    - Because the *for* loop is used for judgment, even if the judgment is False, this line will still be executed
+- *t<sub>j</sub>*: # of times the while loop test for value *j* (i.e., i + # of elements that have to be slid right to insert the *j*-th item)
+- Line 5 is executed *t<sub>2</sub>* + *t<sub>3</sub>* + ... + *t<sub>n</sub>* times
+- Line 6 and Line 7 are executed (*t<sub>2</sub>* - 1) + (*t<sub>3</sub>* - 1) + ... + (*t<sub>n</sub>* - 1) times
+- Runtime: *T(<sub>n</sub>)* = *c<sub>1</sub>n* + *c<sub>2</sub>(n-1)* + *c<sub>4</sub>(n-1)* + *c<sub>5</sub>$$\sum_{j=2}^n \frac{t<sub>j</sub>}$$*
