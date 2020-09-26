@@ -302,4 +302,4 @@ And so on...
         for j = 1 to n           O(n)
             sum += A[i][j]       O(1)
     ```
-> If n is large, the runtime will be long
+> If *n* is large, the runtime will be long
