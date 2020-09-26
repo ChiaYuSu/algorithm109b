@@ -202,5 +202,5 @@ And so on...
 - Intuition: *f(n)* **=** *g(n)* when we ignore constant multiples and small values of *n* 
 - How to **verify** *θ* (Theta) relationships?
     - Show both "Big-Oh" (*O*) and "Big-Omega" (*Ω*) relationships
-    - *f(n) = θ(g(n))* implies that <sub><img src="Week 2\tightly_bound.PNG" height="25px"/></sub> for some **c > 0**, if the limit exists
+    - *f(n) = θ(g(n))* implies that <sub><img src="Week 2\tightly_bound.PNG" height="30px"/></sub> for some **c > 0**, if the limit exists
     <img src="Week 2\tightly_bound_graph.PNG" weight="550px"/>
