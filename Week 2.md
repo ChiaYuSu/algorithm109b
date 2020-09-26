@@ -175,3 +175,5 @@ And so on...
         - No! <sub><img src="Week 2\o2.PNG" height="25px"/></sub>
     - *3n<sup>2</sup> + n = O(n<sup>3</sup>)*?
         - Yes! <sub><img src="Week 2\o3.PNG" height="25px"/></sub>
+    - *3n<sup>2</sup> + n = cn<sup>2</sup>*? (⭐Compulsory exam)
+        - **Take *c* = 4, n<sub>0</sub> = 1**
