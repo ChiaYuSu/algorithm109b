@@ -216,3 +216,13 @@ And so on...
         - No! <sub><img src="Week 2\theta3.PNG" height="25px"/></sub>
     - *c<sub>1</sub>n<sup>2</sup> ≤ 3n<sup>2</sup> + n ≤ c<sub>2</sub>n<sup>2</sup>*? **(⭐Compulsory exam)**
         - **Take *c<sub>1</sub>* = 2, *c<sub>2</sub>* = 4, n<sub>0</sub> = 1**
+
+### Algorithms with Asymptotic Notation
+- "Insertion sort is a *O(n<sup>2</sup>)* algorithm" or "The running time of insertion sort is *O(n<sup>2</sup>)* **=> Correct!**
+    - The worst-case running time of insertion sort is *O(n<sup>2</sup>)*
+    - For any input of size *n*, the running time is at most *cn<sup>2</sup>*
+- "Insertion sort is a *Ω(n)* algorithm" or "The running time of insertion sort is *Ω(n)* **=> Correct!**
+    - The best-case running time of insertion sort is *Ω(n)*
+    - For any input of size *n*, the running time is at least *cn*
+- "Insertion sort is a *θ(n<sup>2</sup>)* algorithm" or "The running time of insertion sort is *θ(n<sup>2</sup>)* **=> Wrong!**
+    - For a sorted input, insertion sort runs in *θ(n)*
