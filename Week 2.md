@@ -1,6 +1,4 @@
 # Week 2 write-up
-- Class contents
-    - Unit 1: Algorithmic Fundamentals
 
 ## Unit 1: Algorithmic Fundamentals
 - Course contents:
@@ -32,3 +30,31 @@
         - Establish a **lower bound**?
 - Applications?
     - **Everywhere in computing!**
+
+### Example: Traveling Salesman Problem (TSP) (旅行銷售員問題)
+- Input: A set of points *P* (cities together with a distance *d(p, q)* between any pair *p, q ∈ P*)
+- Output: The shortest circular route that starts and ends at a given point and visits all the points
+<img src="Week 2\TSP.png" width="550px" />
+
+- **Major concerns**: Correct and efficient algorithms?
+
+### Nearest Neighbor Tour
+- Pseudo code (虛擬碼):
+<img src="Week 2\Nearest_Neighbor_Tour.png" width="550px" />
+
+- Simple to implement and very efficient, but **incorrect!** (簡單粗暴，但不是最有效率的)
+<img src="Week 2\Nearest_Neighbor_Tour_2.png" width="550px" />
+
+### A Correct, But Inefficient Algorithm
+- Pseudo code:
+<img src="Week 2\correct_but_inefficient.png" width="550px" />
+
+- Correctness?
+    - Tries all possible orderings of the points -> Guarantees (保證) to end up with the shortest possible tour
+- Efficiency?
+    - Tries *n!* possible routes!
+        - 120 routes for 5 points
+        - 3628800 routes for 10 points
+        - When there are 20 nodes, how many combinations are there?
+- No known efficient, correct algorithm for TSP! (目前尚未找到有效率且正確的 TSP 算法)
+    - TSP is **"NP-complete (NPC)"** (不存在同時有效率且正確的解)
