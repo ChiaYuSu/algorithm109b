@@ -226,4 +226,4 @@ And so on...
     - For any input of size *n*, the running time is at least *cn*
 - "Insertion sort is a *θ(n<sup>2</sup>)* algorithm" or "The running time of insertion sort is *θ(n<sup>2</sup>)* **=> Wrong!**
     - For a sorted input, insertion sort runs in *θ(n)*
-> The teacher suggests that you only use Big-Oh when writing a master's thesis or writing paper
+> The teacher suggests that you only use **Big-Oh** when writing a master's thesis or writing paper
