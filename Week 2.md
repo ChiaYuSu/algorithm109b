@@ -175,7 +175,7 @@ And so on...
         - No! <sub><img src="Week 2\o2.PNG" height="25px"/></sub>
     - *3n<sup>2</sup> + n = O(n<sup>3</sup>)*?
         - Yes! <sub><img src="Week 2\o3.PNG" height="25px"/></sub>
-    - *3n<sup>2</sup> + n = cn<sup>2</sup>*? **(⭐Compulsory exam)**
+    - *3n<sup>2</sup> + n ≤ cn<sup>2</sup>*? **(⭐Compulsory exam)**
         - **Take *c* = 4, n<sub>0</sub> = 1**
 
 ### *Ω*: Lower Bounding Function
@@ -184,3 +184,15 @@ And so on...
 - How to **verify** *Ω* (Big-Omega) relationships?
     - *f(n) = Ω(g(n))* implies that <sub><img src="Week 2\lower_bound.PNG" height="25px"/></sub> for some **c ≥ 0**, if the limit exists
     <img src="Week 2\lower_bound_graph.PNG" weight="550px"/>
+
+### Big-Omega Examples
+- **Def:** *f(n) = Ω(g(n))* if ∃ *c* > 0 and *n<sub>0</sub>* > 0 such that ***0 ≤ cg(n) ≤ f(n)*** for all *n ≥ n<sub>0</sub>*
+- Examples:
+    - *3n<sup>2</sup> + n = Ω(n<sup>2</sup>)*?
+        - Yes! <sub><img src="Week 2\omega1.PNG" height="28px"/></sub>
+    - *3n<sup>2</sup> + n = Ω(n)*?
+        - No! <sub><img src="Week 2\omega2.PNG" height="25px"/></sub>
+    - *3n<sup>2</sup> + n = Ω(n<sup>3</sup>)*?
+        - Yes! <sub><img src="Week 2\omega3.PNG" height="25px"/></sub>
+    - *3n<sup>2</sup> + n ≥ cn<sup>2</sup>*? **(⭐Compulsory exam)**
+        - **Take *c* = 2, n<sub>0</sub> = 1**
