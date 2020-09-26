@@ -265,3 +265,14 @@ And so on...
 - Computational complexity: an abstract measure of the **time** and **space** necessary to execute an algorithm as functions of its **"input size"**
     - Sort *n* words of bounded length => input size: *n*
     - The input is the graph *G(V, E)* => input size: *|V|* and *|E|*
+- Runtime comparison
+
+| Time            | Big-Oh             | *n = 10*                | *n = 100*                 | *n = 10<sup>4</sup>*    | *n = 10<sup>6</sup>*    | *n = 10<sup>8</sup>*    |
+|-----------------|--------------------|-------------------------|---------------------------|-------------------------|-------------------------|-------------------------|
+| *500*           | *O(1)*             | *5*10<sup>-7</sup>* sec | *5*10<sup>-7</sup>* sec   | *5*10<sup>-7</sup>* sec | *5*10<sup>-7</sup>* sec | *5*10<sup>-7</sup>* sec |
+| *3n*            | *O(n)*             | *3*10<sup>-8</sup>* sec | *3*10<sup>-7</sup>* sec   | *3*10<sup>-5</sup>* sec | 0.003 sec               | 0.3 sec                 |
+| *nlgn*          | *O(n lg n)*        | *3*10<sup>-8</sup>* sec | *6*10<sup>-7</sup>* sec   | *1*10<sup>-4</sup>* sec | 0.018 sec               | 2.5 sec                 |
+| *n<sup>2</sup>* | *O(n<sup>2</sup>)* | *1*10<sup>-7</sup>* sec | *1*10<sup>-5</sup>* sec   | 0.1 sec                 | 16.7 min                | 116 days                |
+| *n<sup>3</sup>* | *O(n<sup>3</sup>)* | *1*10<sup>-6</sup>* sec | 0.001 sec                 | 16.7 min                | 31.7 yr                 | ∞                       |
+| *2<sup>n</sup>* | *O(2<sup>n</sup>)* | *1*10<sup>-6</sup>* sec | *4*10<sup>11</sup>* cent. | ∞                       | ∞                       | ∞                       |
+| *n!*            | *O(n!)*            | 0.003 sec               | ∞                         | ∞                       | ∞                       | ∞                       |
