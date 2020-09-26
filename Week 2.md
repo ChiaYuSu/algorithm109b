@@ -309,7 +309,7 @@ And so on...
 ### Devide-and-Conquer Algorithms (分治演算法)
 - **The divide-and-conquer paradigm** (範例)
     - **Divide** (分割) the problem into a number of subproblems
-    - **Conquer** (處理) the subproblems (solve them)
+    - **Conquer** (解決) the subproblems (solve them)
     - **Combine** (合併) the subproblem solutions to get the solution to the original problem
 - **Merge sort:** a divide-and-conquer algorithm
     - **Divide:** the *n*-element sequence to be sorted into two *n*/2-element sequences
