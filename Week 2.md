@@ -276,3 +276,30 @@ And so on...
 | *n<sup>3</sup>* | *O(n<sup>3</sup>)* | *1*10<sup>-6</sup>* sec | 0.001 sec                 | 16.7 min                | 31.7 yr                 | ∞                       |
 | *2<sup>n</sup>* | *O(2<sup>n</sup>)* | *1*10<sup>-6</sup>* sec | *4*10<sup>11</sup>* cent. | ∞                       | ∞                       | ∞                       |
 | *n!*            | *O(n!)*            | 0.003 sec               | ∞                         | ∞                       | ∞                       | ∞                       |
+
+### Runtime Analysis (運行時間分析)
+- Two rules:
+    - A number of operations are performed in an algorithm, the runtime is dominated by the most expensive (complexity very high) operation
+    - If an operation is repeatedly performed a number of times, the total runtime is the runtime of the operation multiplied by the iteration count
+- Examples:
+    - *T(n) = O(max(T<sub>1</sub>(n), T<sub>2</sub>(n)))*
+    ```c++
+    if (condition) then          O(1)
+        op1                      T1(n)
+    else
+        op2                      T2(n)
+    ```
+    - *T(n) = O(n)*
+    ```c++
+    for i = 1 to n               O(n)
+        if A[i] > maxVal then    O(1)
+            maxVal = A[i]        O(1)
+            maxIdx = i           O(1)
+    ```
+    - *T(n) = O(n<sup>2</sup>)*
+    ```c++
+    for i = 1 to n               O(n)
+        for j = 1 to n           O(n)
+            sum += A[i][j]       O(1)
+    ```
+> If *n* is big -> Time will be very long
