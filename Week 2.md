@@ -233,17 +233,17 @@ And so on...
     - *n*: the input size
     - *p(n)*: a polynomial function of *n* ***(p(n) = n<sup>O(1)</sup>)***
 
-        | complexity | polynomial function | type |
-        |------------|---------------------|------|
-        | low        | 1 | Constant (常數) |
-        | | *lg n* | Logarithmic (對數函數) |
-        | | *lg<sup>O(1)</sup>n = (lg n<sup>O(1)</sup>)* | Polylogarithmic (多對數函數) |
-        | | <img src="Week 2\sqrt.PNG" height="17px"/> | Sublinear (次線性函數) |
-        | | *n* | Linear (線性函數) |
-        | | *n lg n* | Loglinear (對數線性函數) |
-        | | *n<sup>2</sup>* | Quatratic (二次函數) |
-        | | *n<sup>3</sup>* | Cubic (三次函數) |
-        | | *n<sup>4</sup>* | Quartic (四次函數) |
-        | | *2<sup>n</sup>*, *3<sup>n</sup>*,... | Exponential (指數函數) |
-        | | *n! | Factorial (階層) | 
-        | | *n<sup>n</sup>* | - |
+        | complexity | polynomial function                          | type                         |
+        |------------|----------------------------------------------|------------------------------|
+        | low        | 1                                            | Constant (常數)              |
+        |            | *lg n*                                       | Logarithmic (對數函數)       |
+        |            | *lg<sup>O(1)</sup>n = (lg n<sup>O(1)</sup>)* | Polylogarithmic (多對數函數) |
+        |            | <img src="Week 2\sqrt.PNG" height="17px"/>   | Sublinear (次線性函數)       |
+        |            | *n*                                          | Linear (線性函數)            |
+        |            | *n lg n*                                     | Loglinear (對數線性函數)     |
+        |            | *n<sup>2</sup>*                              | Quatratic (二次函數)         |
+        |            | *n<sup>3</sup>*                              | Cubic (三次函數)             |
+        |            | *n<sup>4</sup>*                              | Quartic (四次函數)           |
+        |            | *2<sup>n</sup>*, *3<sup>n</sup>*,...         | Exponential (指數函數)       |
+        |            | *n!                                          | Factorial (階層)             |
+        | high       | *n<sup>n</sup>*                              | -                            |
