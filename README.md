@@ -1,8 +1,8 @@
-# 蘇家禹的演算法筆記
-- 筆記主要內容為老師上課筆記，因此若有些繁雜還請見諒
-- 如果此份筆記有任何錯誤，歡迎發 Issues 給我
-- 最後，感謝老師這學期的教導
-# 關於此份筆記
-- 作　　者：[國立臺灣科技大學電機系碩一](https://www.ee.ntust.edu.tw/) [蘇家禹](https://github.com/ChiaYuSu)
-- 指導老師：[方劭云 老師](http://140.118.107.57/profile.php?tid=6699)
-- 筆記內容：109 學年度上學期 -- 演算法設計與應用
+# Su Chia Yu's algorithm notes
+- The content of the notes is mainly for the teacher's classes, so please forgive some complications.
+- If there are any errors in this note, please feel free to send me issues.
+- Lastly, thank you teacher for your teaching this semester.
+# About the note
+- Author：[National Taiwan University of Science and Technology, Department of Electrical Engineering, Master's Year 1](https://www.ee.ntust.edu.tw/) [Chia Yu Su](https://github.com/ChiaYuSu)
+- Professor：[Shao-Yun Fang](http://140.118.107.57/profile.php?tid=6699)
+- Note contents：Academic year 109 first semester -- Algorithm Design and Application
