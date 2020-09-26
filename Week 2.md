@@ -247,3 +247,16 @@ And so on...
 |            | *2<sup>n</sup>*, *3<sup>n</sup>*,...         | Exponential (指數函數)       | No                            |
 |            | *n!                                          | Factorial (階層)             | No                            |
 | high       | *n<sup>n</sup>*                              | -                            | No                            |
+
+### An example **(⭐Compulsory exam)**
+- Rank the following functions by the order of growth:
+    - *n<sup>2</sup>*
+    - *n<sup>lg n</sup>*
+- Calculation process:
+    - **key: Both calculations take log**
+    - *n<sup>2</sup>*:
+        - *lg(n<sup>2</sup>) = 2 lg n*
+        - Complexity: low
+    - *n<sup>lg n</sup>*:
+        - *lg(n<sup>lg n</sup>) = lg n × lg n = (lg n)<sup>2</sup>*
+        - Complexity: high
