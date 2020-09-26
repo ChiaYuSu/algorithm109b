@@ -147,10 +147,11 @@ And so on...
 
 ### Asymptotic Analysis (漸進分析)
 - Asymptotic analysis looks at growth of *T(n)* as *n* -> ∞
-- θ notation: drop low-order terms and ignore the leading constant
+- θ notation: drop low-order terms and ignore the leading constant (忽略較低次方及常數)
     - E.g.: *T(n) = 8n<sup>3</sup> - 4n<sup>2</sup> + 5n - 2 = θ(n<sup>3</sup>)*
-- As *n* grows large, lower-order θ algorithms outperform higher-order ones
+- As *n* grows large, lower-order θ algorithms outperform higher-order ones (隨著 n 的增大，低階 θ 算法優於高階 θ 算法)
     - E.g.: For large inputs, a θ(n<sup>2</sup>) algorithm will run more quickly in the worst case than a θ(n<sup>3</sup>) algorithm
-- Asymptotic analysis of insertion sort
+- Asymptotic analysis of insertion sort (插入排序的漸近分析)
     - **Worst case:** Input reverse sorted, **while** loop is executed *j* times each iteration: <sub><img src="Week 2\worst.PNG" height="20px"/></sub>
+        - Calculation process
     - **Average case:** **While** loop is executed about *j/2* times each iteration: <sub><img src="Week 2\average.PNG" height="25px"/></sub>
