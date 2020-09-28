@@ -320,5 +320,9 @@ And so on...
 - pseudo code:
 <br><img src="Week 2\merge.PNG" width="550px" />
 
+    - *A* means array
+    - *p* means the first element in array *A*
+    - *r* means the last element in array *A*
+
 - Graphic explanation:
 <br><img src="Week 2\Merge_Sort.png" width="550px" />
