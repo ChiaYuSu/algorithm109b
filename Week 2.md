@@ -35,20 +35,20 @@
 ### Example: Traveling Salesman Problem (TSP) (旅行銷售員問題)
 - Input: A set of points *P* (cities together with a distance *d(p, q)* between any pair *p, q ∈ P*)
 - Output: The shortest circular route that starts and ends at a given point and visits all the points
-<img src="Week 2\TSP.PNG" width="550px" />
+<br><img src="Week 2\TSP.PNG" width="550px" />
 
 - **Major concerns**: Correct and efficient algorithms?
 
 ### Nearest Neighbor Tour
 - Pseudo code (虛擬碼):
-<img src="Week 2\Nearest_Neighbor_Tour.PNG" width="550px" />
+<br><img src="Week 2\Nearest_Neighbor_Tour.PNG" width="550px" />
 
 - Simple to implement and very efficient, but **incorrect!** (簡單粗暴，但不是最有效率的)
-<img src="Week 2\Nearest_Neighbor_Tour_2.PNG" width="550px" />
+<br><img src="Week 2\Nearest_Neighbor_Tour_2.PNG" width="550px" />
 
 ### A Correct, But Inefficient Algorithm
 - Pseudo code:
-<img src="Week 2\correct_but_inefficient.PNG" width="550px" />
+<br><img src="Week 2\correct_but_inefficient.PNG" width="550px" />
 
 - Correctness?
     - Tries all possible orderings of the points -> Guarantees (保證) to end up with the shortest possible tour
@@ -62,7 +62,7 @@
 
 ### Example of Permutations
 - 5! = 120 permutations for only 5 points
-<img src="Week 2\permutations.PNG" width="550px" />
+<br><img src="Week 2\permutations.PNG" width="550px" />
 
 ## Insertion Sort and Asymptotic Analysis (插入排序及漸進分析)
 
@@ -82,10 +82,10 @@
 
 ### Insertion Sort
 - Pseudo code:
-<img src="Week 2\insertion_pseudo.PNG" width="550px" />
+<br><img src="Week 2\insertion_pseudo.PNG" width="550px" />
 
 - Graphic explanation:
-<img src="Week 2\insertion_graphic.PNG" width="550px" />
+<br><img src="Week 2\insertion_graphic.PNG" width="550px" />
 
 - Trace code:
 ```
@@ -113,7 +113,7 @@ And so on...
 ### Correctness?
 - Loop invariant (迴圈不變性)
     - At the start of each iteration of the for loop of lines 1 to 8, subarray A[1..j-1] consists of the elements originally in A[1..j-1] but in sorted order (在 1 至 8 行的 for 循環的每次迭代開始時，子數組 A[1..j-1] 按順序**排序完成**)
-    <img src="Week 2\insertion_correctness.PNG" width="550px" />
+    <br><img src="Week 2\insertion_correctness.PNG" width="550px" />
 
 ### Loop Invariant for Proving Correctness
 - We may use **loop invariants** to prove the correctness (數學歸納法證明)
@@ -128,7 +128,7 @@ And so on...
 
 ### Exact Analysis of Insertion Sort (精確分析)
 - Pseudo code:
-<img src="Week 2\insertion_exact_pseudo.PNG" width="550px" />
+<br><img src="Week 2\insertion_exact_pseudo.PNG" width="550px" />
 
 - The for loop is executed (n-1) + 1 times. (Why?)
     - Because the *for* loop is used for judgment, even if the judgment is False, this line will still be executed
@@ -163,7 +163,7 @@ And so on...
 - Intuition: *f(n)* **≤** *g(n)* when we ignore constant multiples and small values of *n*
 - How to **verify** *O* (Big-Oh) relationships?
     - *f(n) = O(g(n))* implies that <sub><img src="Week 2\upper_bound.PNG" height="25px"/></sub> for some **c ≥ 0**, if the limit exists
-    <img src="Week 2\upper_bound_graph.PNG" weight="550px"/>
+    <br><img src="Week 2\upper_bound_graph.PNG" weight="550px"/>
 
 
 ### Big-Oh Examples
@@ -183,7 +183,7 @@ And so on...
 - Intuition: *f(n)* **≥** *g(n)* when we ignore constant multiples and small values of *n* 
 - How to **verify** *Ω* (Big-Omega) relationships?
     - *f(n) = Ω(g(n))* implies that <sub><img src="Week 2\lower_bound.PNG" height="25px"/></sub> for some **c ≥ 0**, if the limit exists
-    <img src="Week 2\lower_bound_graph.PNG" weight="550px"/>
+    <br><img src="Week 2\lower_bound_graph.PNG" weight="550px"/>
 
 ### Big-Omega Examples
 - **Def:** *f(n) = Ω(g(n))* if ∃ *c* > 0 and *n<sub>0</sub>* > 0 such that ***0 ≤ cg(n) ≤ f(n)*** for all *n ≥ n<sub>0</sub>*
@@ -203,7 +203,7 @@ And so on...
 - How to **verify** *θ* (Theta) relationships?
     - Show both "Big-Oh" (*O*) and "Big-Omega" (*Ω*) relationships
     - *f(n) = θ(g(n))* implies that <sub><img src="Week 2\tightly_bound.PNG" height="30px"/></sub> for some **c > 0**, if the limit exists
-    <img src="Week 2\tightly_bound_graph.PNG" weight="550px"/>
+    <br><img src="Week 2\tightly_bound_graph.PNG" weight="550px"/>
 
 ### Theta Examples
 - **Def:** *f(n) = θ(g(n))* if ∃ *c<sub>1</sub>, c<sub>2</sub>* > 0 and *n<sub>0</sub>* > 0 such that ***0 ≤ c<sub>1</sub>g(n) ≤ f(n) ≤ c<sub>2</sub>g(n)*** for all *n ≥ n<sub>0</sub>*
@@ -318,5 +318,7 @@ And so on...
 
 ### Merge Sort
 - pseudo code:
-<img src="Week 2\merge.PNG" width="550px" />
+<br><img src="Week 2\merge.PNG" width="550px" />
 
+- Graphic explanation:
+<br><img src="Week 2\Merge_Sort.PNG" width="550px" />
