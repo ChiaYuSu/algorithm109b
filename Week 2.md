@@ -317,7 +317,7 @@ And so on...
     - **Combine:** merge the resulting two sorted *n*/2-element sequences
 
 ### Merge Sort
-- pseudo code:
+- Pseudo code:
 <br><img src="Week 2\merge.PNG" width="550px" />
     - *A* means array
     - *p* means the first element in array *A*
@@ -325,3 +325,5 @@ And so on...
 
 - Graphic explanation:
 <br><img src="Week 2\Merge_Sort.png" width="550px" />
+
+- Trace code:
