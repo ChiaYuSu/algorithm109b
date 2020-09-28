@@ -321,4 +321,4 @@ And so on...
 <br><img src="Week 2\merge.PNG" width="550px" />
 
 - Graphic explanation:
-<br><img src="Week 2\Merge_Sort.PNG" width="550px" />
+<br><img src="Week 2\Merge_Sort.png" width="550px" />
