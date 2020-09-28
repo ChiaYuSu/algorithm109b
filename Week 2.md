@@ -319,7 +319,6 @@ And so on...
 ### Merge Sort
 - pseudo code:
 <br><img src="Week 2\merge.PNG" width="550px" />
-
     - *A* means array
     - *p* means the first element in array *A*
     - *r* means the last element in array *A*
