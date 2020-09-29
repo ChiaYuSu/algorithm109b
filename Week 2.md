@@ -236,7 +236,7 @@ And so on...
 | complexity | polynomial function                          | type                         | Is polynomial-time complexity |
 |------------|----------------------------------------------|------------------------------|-------------------------------|
 | low        | 1                                            | Constant (常數)              | Yes                           |
-|            | *lg n*                                       | Logarithmic (對數函數)       | Yes                           |
+|            | *lg n* = *log<sub>2</sub>n*                  | Logarithmic (對數函數)       | Yes                           |
 |            | *lg<sup>O(1)</sup>n = (lg n<sup>O(1)</sup>)* | Polylogarithmic (多對數函數) | Yes                           |
 |            | <img src="Week 2\sqrt.PNG" height="17px"/>   | Sublinear (次線性函數)       | Yes                           |
 |            | *n*                                          | Linear (線性函數)            | Yes                           |
@@ -253,7 +253,7 @@ And so on...
     - *n<sup>2</sup>*
     - *n<sup>lg n</sup>*
 - Calculation process:
-    - **key: Both formula take log**
+    - **key: Both formula take lg**
     - *n<sup>2</sup>*:
         - *lg(n<sup>2</sup>) = 2 lg n*
         - Complexity: **low**
