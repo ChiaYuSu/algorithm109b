@@ -393,6 +393,6 @@ And so on to A13...
 0  A = A15
 1  p < q is False, return
 -----
-5  Merge(A, p, q, r) => Talk about next week
+5  Merge(A, p, q, r) => Talk about next class
 ```
-> We're done with MergeSort today. **We'll talk about Merge next week**
+> We're done with MergeSort today. **We'll talk about Merge next class**
