@@ -399,17 +399,17 @@ And so on to A13...
 
 ## Additional Knowledge
 1. Do these two different ways of writing get different results?
-```c
-for (int i = 0; i <= 10; i++) {
+    ```c
+    for (int i = 0; i <= 10; i++) {
 
-}
-```
-or
-```c
-for (int i = 0; i <= 10; ++i) {
+    }
+    ```
+    or
+    ```c
+    for (int i = 0; i <= 10; ++i) {
 
-}
-```
+    }
+    ```
 - Ans: Is the same
 
 2. Following the above question, if the result is the same, which is better, `i++` or `++i`?
