@@ -317,13 +317,82 @@ And so on...
     - **Combine:** merge the resulting two sorted *n*/2-element sequences
 
 ### Merge Sort
+- Merge Sort algorithm mainly consists of two parts:
+    - **Split** the array in half
+    - **Sort** the array and **merge** it
 - Pseudo code:
 <br><img src="Week 2\merge.PNG" width="550px" />
     - ***A*** means array
-    - ***p*** means the first element in array *A*
-    - ***r*** means the last element in array *A*
+    - ***p*** means the first element index in array *A*
+    - ***r*** means the last element index in array *A*
+> For the arrays in this book, the array index starts from 1
 
 - Graphic explanation:
 <br><img src="Week 2\Merge_Sort.png" width="550px" />
 
 - Trace code:
+```
+0  A = A1
+1  p < r is True
+2  q = (8 / 2 = 4), A1 cut into 2 sub-arrays (A2 & A3)
+3  Call MergeSort(A2, 1, 4), go back to line 0
+-----
+0  A = A2
+1  p < r is True
+2  q = (4 / 2 = 2), A2 cut into 2 sub-arrays (A4 & A5), return
+-----
+4  Call MergeSort(A3, 1, 4), go back to line 0 
+-----
+0  A = A3
+1  p < q is True
+2  q = (4 / 2 = 2), A3 cut into 2 sub-arrays (A6 & A7), return
+-----
+3  Call MergeSort(A4, 1, 2), go back to line 0
+-----
+0  A = A4
+1  p < q is True
+2  q = (2 / 2 = 1), A4 cut into 2 sub-arrays (A8 & A9), return
+-----
+4  Call MergeSort(A5, 1, 2), go back to line 0
+-----
+0  A = A5
+1  p < q is True
+2  q = (2 / 2 = 1), A5 cut into 2 sub-arrays (A10 & A11), return
+-----
+3  Call MergeSort(A6, 1, 2), go back to line 0
+-----
+0  A = A6
+1  p < q is True
+2  q = (2 / 2 = 1), A6 cut into 2 sub-arrays (A12 & A13), return
+-----
+4  Call MergeSort(A7, 1, 2), go back to line 0
+-----
+0  A = A7
+1  p < q is True
+2  q = (2 / 2 = 1), A7 cut into 2 sub-arrays (A14 & A15), return
+-----
+3  Call MergeSort(A8, 1, 1), go back to line 0
+-----
+0  A = A8
+1  p < q is False, return
+-----
+4  Call MergeSort(A9, 1, 1), go back to line 0
+-----
+0  A = A9
+1  p < q is False, return
+-----
+And so on to A13...
+-----
+3  Call MergeSort(A14, 1, 1), go back to line 0
+-----
+0  A = A14
+1  p < q is False, return
+-----
+4  Call MergeSort(A15, 1, 1), go back to line 0
+-----
+0  A = A15
+1  p < q is False, return
+-----
+5  Merge(A, p, q, r) => Talk about next week
+```
+> We're done with MergeSort today. We'll talk about Merge next week.
