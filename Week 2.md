@@ -395,4 +395,4 @@ And so on to A13...
 -----
 5  Merge(A, p, q, r) => Talk about next week
 ```
-> We're done with MergeSort today. We'll talk about Merge next week.
+> We're done with MergeSort today. **We'll talk about Merge next week**
