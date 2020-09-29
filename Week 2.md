@@ -396,3 +396,21 @@ And so on to A13...
 5  Merge(A, p, q, r) => Talk about next class
 ```
 > We're done with MergeSort today. **We'll talk about Merge next class**
+
+## Additional Knowledge
+1. Do these two different ways of writing get different results?
+```c
+for (int i = 0; i <= 10; i++) {
+
+}
+```
+or
+```c
+for (int i = 0; i <= 10; ++i) {
+
+}
+```
+> Is the same
+
+2. Following the above question, if the result is the same, which is better, `i++` or `++i`?
+> There may be a difference in efficiency on older compilers (`++i` is more efficient than `i++`), but practically all modern compilers are optimized for this. So, to satisfy all compilers, if `++i` and `i++` give the same result, use `++i` as much as possible
