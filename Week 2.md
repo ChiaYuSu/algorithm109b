@@ -413,4 +413,4 @@ And so on to A13...
 - Ans: Is the same
 
 2. Following the above question, if the result is the same, which is better, `i++` or `++i`?
-- Ans: There may be a difference in efficiency on older compilers (`++i` is more efficient than `i++`), but practically all modern compilers are optimized for this. So, to satisfy all compilers, if `++i` and `i++` give the same result, use `++i` as much as possible
+- Ans: There may be a difference in **efficiency** on older compilers (`++i` is more efficient than `i++`), but practically all modern compilers are optimized for this. So, to satisfy all compilers, if the result of `++i` is the same as `i++`, use `++i` when writing programs in the future
