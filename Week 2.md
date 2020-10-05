@@ -154,6 +154,11 @@ int main()
 } 
 ```
 
+- Result:
+```
+2 5 6 7 8 9
+```
+
 ### Correctness?
 - Loop invariant (迴圈不變性)
     - At the start of each iteration of the for loop of lines 1 to 8, subarray A[1..j-1] consists of the elements originally in A[1..j-1] but in sorted order (在 1 至 8 行的 for 循環的每次迭代開始時，子數組 A[1..j-1] 按順序**排序完成**)
