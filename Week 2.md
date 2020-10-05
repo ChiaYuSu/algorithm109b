@@ -110,6 +110,50 @@
 And so on...
 ```
 
+- C language:
+```c++
+#include <stdio.h> 
+  
+/* Insertion sort */
+void insertionSort(int arr[], int n) 
+{ 
+    int i, key, j; 
+    for (i = 1; i < n; i++) { 
+        key = arr[i]; 
+        j = i - 1; 
+  
+        /* Move elements of arr[0..i-1], that are greater than key, to one position ahead 
+           of their current position */
+        while (j >= 0 && arr[j] > key) { 
+            arr[j + 1] = arr[j]; 
+            j = j - 1; 
+        } 
+        arr[j + 1] = key; 
+    } 
+} 
+  
+/* Print */
+void printArray(int arr[], int n) 
+{ 
+    int i; 
+    for (i = 0; i < n; i++) 
+        printf("%d ", arr[i]); 
+    printf("\n"); 
+} 
+  
+/* Main */
+int main() 
+{ 
+    int arr[] = {8, 6, 9, 7, 5, 2}; 
+    int n = sizeof(arr) / sizeof(arr[0]); 
+  
+    insertionSort(arr, n); 
+    printArray(arr, n); 
+  
+    return 0; 
+} 
+```
+
 ### Correctness?
 - Loop invariant (迴圈不變性)
     - At the start of each iteration of the for loop of lines 1 to 8, subarray A[1..j-1] consists of the elements originally in A[1..j-1] but in sorted order (在 1 至 8 行的 for 循環的每次迭代開始時，子數組 A[1..j-1] 按順序**排序完成**)
