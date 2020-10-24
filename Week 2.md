@@ -374,6 +374,7 @@ int main()
     - ***A*** means array
     - ***p*** means the first element index in array *A*
     - ***r*** means the last element index in array *A*
+    - ***q*** means the middle element (*p*+*r*/2) index in array *A*
 > For the arrays in this book, the array index starts from 1
 
 - Graphic explanation:
