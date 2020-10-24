@@ -77,6 +77,7 @@
     - *D(n)*: time to divide the problem of size *n* into subproblems (將大小為 *n* 的問題分解為子問題，所花的時間)
     - *C(n)*: time to combine the subproblem solutions to get the answer for the problem of size *n* (結合 *n* 個子問題，所花的時間)
         - Note: *a* is not necessarily equal to *b*
+        
 - Merge sort:
     - *D(n)* = *θ(1)*: compute midpoint of array
     - *C(n)* = *θ(n)*: merging by scanning sorted subarrays **(Merge function)**
