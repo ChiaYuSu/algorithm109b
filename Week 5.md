@@ -1,5 +1,9 @@
 # Week 5 write-up
 
+## Administrative matters
+- Week 6 Quiz 1 postponed to Week 7 (10/30)
+- Week 10 Midterm postponed to Week 11 (11/27) 
+
 ## Merge Sort and Asymptotic Analysis (合併排序及漸進分析)
 
 ### Merge
@@ -77,7 +81,7 @@
     - *D(n)*: time to divide the problem of size *n* into subproblems (將大小為 *n* 的問題分解為子問題，所花的時間)
     - *C(n)*: time to combine the subproblem solutions to get the answer for the problem of size *n* (結合 *n* 個子問題，所花的時間)
         - Note: *a* is not necessarily equal to *b*
-        
+
 - Merge sort:
     - *D(n)* = *θ(1)*: compute midpoint of array
     - *C(n)* = *θ(n)*: merging by scanning sorted subarrays **(Merge function)**
@@ -108,4 +112,38 @@
 ### Solving Recurrences: Master Theorem **(⭐Compulsory exam)**
 - Let **a ≥ 1** and **b > 1** be constants, *f(n)* be an asymptotically positive function, and *T(n)* be defined on nonnegative integers as ***T(n) = aT(n/b) + f(n)***
 - Then, *T(n)* can be bounded asymptotically as follows:
-    - *T(n) = θ(n<sup>log<sub>b</sub>a</sup>)* if *f(n) = O(n<sup>log<sub>b</sub>a-∈</sup>)* for some constant ∈ > 0 
+    - *T(n) = θ(n<sup>log<sub>b</sub>a</sup>)* if *f(n) = O(n<sup>log<sub>b</sub>a-∈</sup>)* for some constant ∈ > 0
+    - *T(n) = θ(n<sup>log<sub>b</sub>a</sup> lg n)* if *f(n) = θ(n<sup>log<sub>b</sub>a</sup>)*
+    - *T(n) = θ(f(n))* **if *f(n) = Ω(n <sup>log<sub>b</sub>a+∈</sup>)*** for some constant *∈* > 0 and ***af(n/b) ≦ cf(n)* for some constant *c* < 1** and all sufficiently large *n*
+- **Intuition (直覺、直觀): compare *f(n)* with *θ(n<sup>log<sub>b</sub>a</sup>)***
+    - Case 1: *f(n)* is polynomially (多項式) smaller than *θ(n<sup>log<sub>b</sub>a</sup>)* 
+        - **(*f(n) <  θ(n<sup>log<sub>b</sub>a</sup>)*)**
+    - Case 2: *f(n)* is asymptotically (漸進地) equal to *θ(n<sup>log<sub>b</sub>a</sup>)* 
+        - **(*f(n) =  θ(n<sup>log<sub>b</sub>a</sup>)*)**
+    - Case 3: *f(n)* is polynomially larger than *θ(n<sup>log<sub>b</sub>a</sup>)* 
+        - **(*f(n) >  θ(n<sup>log<sub>b</sub>a</sup>)*)**
+### Examples of Master Theorem **(⭐Compulsory exam)**
+- Eg. 1: *T(n) = 4T(n/2) + n*
+    - Compare *f(n) = n* with *θ(n<sup>log<sub>b</sub>a</sup>) = n<sup>2</sup>*: *f(n) = n = O(n<sup>2-∈</sup>)*
+    - Case 1 applies: *T(n) = θ(n<sup>log<sub>b</sub>a</sup>) = θ(n<sup>2</sup>)*
+- Eg. 2: *T(n) = 2T(n/2) + n*
+    - Compare *f(n) = n* with *n<sup>log<sub>b</sub>a</sup> = n*: *f(n) = n = θ(n)*
+    - Case 2 applies: *T(n) = θ(n<sup>log<sub>b</sub>a</sup> lg n) = θ(n lg n)*
+- Eg. 3: *T(n) = 3T(n/4) + n lg n*
+    - Compare *f(n) = n lg n* with *n<sup>log<sub>b</sub>a</sup> = n<sup>0.79</sup>*: *f(n) = n lg n = Ω(n<sup>0.79+∈</sup>)*
+    - Case 3 could apply: Need to **check for "regularity" condition** that *af(n/b) ≦ cf(n)*
+        - Find c < 1 subject to (滿足) *af(n/b) ≦ cf(n)* for large enough *n*
+        - *3(n/4) lg (n/4) ≦ cn lg n* which is true for *c = 3/4*
+    - Case 3 applies: *T(n) = θ(f(n)) = θ(n lg n)*
+
+### Examples of Master Theorem (cont'd)
+- *T(n) = 2<sup>n</sup>T(n/2) + n<sup>n</sup>*
+    - Master theorem can't be applied, **because *a* is not constant**
+- *T(n) = 0.5T(n/2) + 1/n*
+    - Master theorem can't be applied, **because *a* < 1**
+- *T(n) = 64T(n/8) - n<sup>2</sup>log n*
+    - Master theorem can't be applied, **because *f(n)* is not positive**
+- *T(n) = 4T(n/2) + n<sup>2</sup>lg n*
+    - Master theorem can't be applied, **because**
+        - *n<sup>log<sub>b</sub>a</sup> = n<sup>2</sup>*, *f(n) = n<sup>2</sup> lg n*, case 3 could apply
+        - **Regularity check**: *4(n/2)<sup>2</sup> lg(n/2) ≦ cn<sup>2</sup> lg n*, arrange the formula → *n<sup>2</sup> lg(n/2) ≦ cn<sup>2</sup> lg n*, **because c = 1, so master theorem can't be applied**
