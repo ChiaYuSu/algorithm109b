@@ -147,3 +147,40 @@
     - Master theorem can't be applied, **because**
         - *n<sup>log<sub>b</sub>a</sup> = n<sup>2</sup>*, *f(n) = n<sup>2</sup> lg n*, case 3 could apply
         - **Regularity check**: *4(n/2)<sup>2</sup> lg(n/2) ≦ cn<sup>2</sup> lg n*, arrange the formula → *n<sup>2</sup> lg(n/2) ≦ cn<sup>2</sup> lg n*, **because c = 1, so master theorem can't be applied**
+
+## Unit 2: Sorting and Order Statistics
+- Course contents:
+    - Heapsort
+    - Quicksort
+    - Sorting in linear time
+    - Order statistics (Won't teach this semester, because the time is not enough)
+
+## Heapsort
+### Tree Height and Depth
+- **Height** of a node *u*: Length of the longest path from *u* to a leaf **(The number in the circle)**
+- **Depth** of a node *u*: Length of the path from the root to *u*
+- **Height of a tree**: Maximum depth of its nodes
+- A **level** is the set of all nodes at the same depth **(level = depth + 1)**
+<br><img src="Week 5\TreeDefine.PNG" width="550px" />
+
+### Binary Trees
+- A **full** binary tree: every node has either **0 or 2 children**
+- A **complete** binary tree: the lowest *d*-1 levels of a binary tree of height *d* are filled and level *d* is partially filled from left to right (簡單來說，如果一棵樹的 node 按照 Full Binary Tree 的次序排列 (由上至下，由左至右)，則稱此樹為 Complete Binary Tree)
+- A **perfect** binary tree: all *d* levels of a heught-*d* binary tree are filled.
+<br><img src="Week 5\three_trees.PNG" width="550px" />
+
+### Binary Heap
+- Binary heap data structure: represented by an array *A*
+    - Complete binary tree
+    - **Max-Heap property**: A node's key **≧** its children's keys
+    <br><img src="Week 5\max_heap.PNG" width="550px" />
+    - **Min-Heap property**: A node's key **≦** its children's keys
+- Implementation
+    - Root: *A[1]*
+    - For *A[i]*, LEFT child is *A[2i]*, RIGHT child is *A[2i+1]*, and PARENT is *A[𝑖/2]*
+    <br><img src="Week 5\max_heap.PNG" width="550px" />
+        - If you want to use C language code to implementation:
+            - Root: *A[0]*
+            - LEFT child is *A[2i+1]*
+            - RIGHT child is *A[2i+2]*
+    - A.heap-size (# of elements in the heap stored within *A*) ≦ *A*.length (# of elements in *A*)
