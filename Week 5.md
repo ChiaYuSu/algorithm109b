@@ -150,12 +150,12 @@
 
 ## Unit 2: Sorting and Order Statistics
 - Course contents:
-    - Heapsort
-    - Quicksort
+    - Heapsort (堆積排序法)
+    - Quicksort (快速排序法)
     - Sorting in linear time
     - Order statistics (Won't teach this semester, because the time is not enough)
 
-## Heapsort
+## Heapsort (堆積排序法)
 ### Tree Height and Depth
 - **Height** of a node *u*: Length of the longest path from *u* to a leaf **(The number in the circle)**
 - **Depth** of a node *u*: Length of the path from the root to *u*
