@@ -97,7 +97,6 @@ And so on...
 ### HEAPSORT: Complexity
 - Pseudo code:
 <br><img src="Week 6\HEAPSORT.PNG" width="550px" />
-
 - Time complexity: *O(n lg n)*
 - Space complexity: *O(n)* for array, so HEAPSORT is **in-place** algorithm
 - Is HEAPSORT stable? 
@@ -124,7 +123,6 @@ And so on...
 ### Heap: INSERT
 - Pseudo code:
 <br><img src="Week 6\HEAP-INSERT.PNG" width="550px" />
-
 - Trace code:
 ```
 0  MAX-HEAP-INSERT(Array, insert key)
@@ -148,7 +146,6 @@ And so on...
 ### Heap: EXTRACT-MAX
 - Pseudo code:
 <br><img src="Week 6\HEAP-EXTRACT-MAX.PNG" width="550px" />
-
 - Trace code:
 ```
 0  HEAP-EXTRACT-MAX(Array)
@@ -177,7 +174,6 @@ And so on...
 - There are several partitioning variants
 - Pseudo code:
 <br><img src="Week 6\PARTITION-Pseudo.PNG" width="550px" />
-
 - Trace code:
 ```
 0  PARTITION(Array, p=1, r=8)
@@ -213,7 +209,6 @@ And so on...
 7  A[4]=A[8]=4, A[8]=A[4]=8
 8  return i+1=4 → q=4
 ```
-
 - Graphic explanation:
 <br><img src="Week 6\PARTITION-Graphic.PNG" width="350px" />
 
