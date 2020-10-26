@@ -24,7 +24,7 @@
 8   largest = 4 != 2 is True
 9   A[2] = 14, A[4] = 4
 10  MAX-HEAPIFY(Array, largest = 4)
----
+-----
 0   MAX-HEAPIFY(Array, i = 4)
 1   l = LEFT(4) = 8
 2   r = RIGHT(4) = 9
