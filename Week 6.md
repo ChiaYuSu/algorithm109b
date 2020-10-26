@@ -53,7 +53,6 @@
 ### BUILD-MAX-HEAPIFY: Algorithm
 - Pseudo code:
 <br><img src="Week 6\BUILD-MAX-HEAP-Pseudo.PNG" width="550px" />
-    
     - `downto 1`: `1` means root index 
 
 - Trace code:
@@ -83,7 +82,6 @@ And so on...
     - MAX-HEAPIFY
 - Pseudo code:
 <br><img src="Week 6\HEAPSORT.PNG" width="550px" />
-
 - Trace code:
 ```
 0  HEAPSORT(Array)
