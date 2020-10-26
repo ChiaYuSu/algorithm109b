@@ -217,7 +217,7 @@ And so on...
 ```
 
 - Graphic explanation:
-<br><img src="Week 6\PARTITION-Graphic.PNG" width="550px" />
+<br><img src="Week 6\PARTITION-Graphic.PNG" width="200px" />
 
 ### Quicksort Runtime Analysis: Best Case
 - A divide-and-conquer algorithm
