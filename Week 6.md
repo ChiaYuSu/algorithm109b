@@ -54,7 +54,6 @@
 - Pseudo code:
 <br><img src="Week 6\BUILD-MAX-HEAP-Pseudo.PNG" width="550px" />
     - `downto 1`: `1` means root index 
-
 - Trace code:
 ```
 0  BUILD-MAX-HEAP(Array)
