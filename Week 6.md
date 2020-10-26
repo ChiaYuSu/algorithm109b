@@ -42,7 +42,7 @@
 - Worst case: last row of binary tree is half empty → children's subtrees have size ≦ *2n/3*
 - Recurrence: *T(n) ≦ T(2n/3) + θ(1) → T(n) = **O(lg n)***
 - How comes 2/3:
-    - Worst (LEFT tree) / Total = (2*K* + 1) / (3*K*) + 2 → *limit* = 2/3
+    - Worst (LEFT tree) / Total = (2*K* + 1) / (3*K* + 2) → *limit* = 2/3
 <br><img src="Week 6\MAX-HEAPIFY-Worst.PNG" width="550px" />
 
 ### Build-MAX-HEAP: Building a Max-Heap
