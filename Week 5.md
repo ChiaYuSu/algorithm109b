@@ -177,7 +177,7 @@
     - **Min-Heap property**: A node's key **≦** its children's keys
 - Implementation
     - Root: *A[1]*
-    - For *A[i]*, LEFT child is *A[2i]*, RIGHT child is *A[2i+1]*, and PARENT is *A[𝑖/2]*
+    - For *A[i]*, LEFT child is *A[2i]*, RIGHT child is *A[2i+1]*, and PARENT is *A[⌊𝑖/2⌋]*
     <br><img src="Week 5\max_heap.PNG" width="550px" />
         - If you want to use C language code to implementation:
             - Root: *A[0]*
