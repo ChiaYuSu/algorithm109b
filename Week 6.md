@@ -170,6 +170,7 @@ And so on...
     - **Combine**: Do nothing; quicksort is an **in-place** algorithm
 - Quicksort Pseudo code:
 <br><img src="Week 6\Quicksort-Pseudo.PNG" width="550px" />
+
     - **PARTITION (劃分) is the most important part in QUICKSORT**
 
 ### Quicksort: Partition
