@@ -209,7 +209,7 @@
     - Case C:
     <br><img src="Week 7\Tree-Deletion-Pseudo-CaseC.PNG" width="350px" />
     - Case D:
-    <br><img src="Week 7\Tree-Deletion-Pseudo-CaseD.PNG" width="550px" />
+    <br><img src="Week 7\Tree-Deletion-Pseudo-CaseD.PNG" width="750px" />
 
 ## Red-Black Trees
 ### Balanced Search Trees: Red-Black Trees
