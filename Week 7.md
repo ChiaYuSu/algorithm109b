@@ -207,7 +207,7 @@
     - Case B:
     <br><img src="Week 7\Tree-Deletion-Pseudo-CaseB.PNG" width="200px" />
     - Case C:
-    <br><img src="Week 7\Tree-Deletion-Pseudo-CaseC.PNG" width="530px" />
+    <br><img src="Week 7\Tree-Deletion-Pseudo-CaseC.PNG" width="350px" />
     - Case D:
     <br><img src="Week 7\Tree-Deletion-Pseudo-CaseD.PNG" width="550px" />
 
