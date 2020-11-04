@@ -215,4 +215,4 @@
 ### Balanced Search Trees: Red-Black Trees
 - Add **color** field to nodes of binary trees
 - **Red-black tree properties:**
-    - Every node is either <font color="#ff0000">red</font> or black
+    - Every node is either <span style="color:red">red</span> or black
