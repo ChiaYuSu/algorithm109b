@@ -94,11 +94,7 @@
 2  x = 6, go back to line 1
 ----- 
 1  (x.left != NIL) is False, go to line 3
-3  return x = 6
------ Tree-Successor
-3  y = x.p = NIL
-4  (y != NIL) is False and (5 == NIL) is False
-7  return y = NIL
+3  return x = 6, so 5 successor is 6
 ```
 - Trace code (x = 4):
 ```
@@ -111,7 +107,7 @@
 6  y = 5, go to line 4
 -----
 4  (y != NIL) is True and (3 == 7) is False, go to line 7
-7  return y = 5
+7  return y = 5, so 4 successor is 5
 ```
 > *y* (5) is the lowest ancestor of *x* (4), whose left child (3) is also an ancestor of *x* (4)
 - Graphic explanation:
@@ -171,3 +167,52 @@
 <br><img src="Week 7\Case-2.PNG" width="350px" />
 
 #### If *z* has two children
+- If ***z's* successor is *z's* right child**
+<br><img src="Week 7\Tree-Deletion-1.PNG" width="550px" />
+    - 直接將 *z* 拔掉，把 *z* 的 successor 接上去
+- **Otherwise**
+<br><img src="Week 7\Tree-Deletion-2.PNG" width="550px" />
+    - 把 *z* 的 successor 移到 *z* 的位置
+
+### Tree Deletion
+- Pseudo code:
+<br><img src="Week 7\Tree-Deletion-3.PNG" width="550px" />
+<br><img src="Week 7\Tree-Minimum.PNG" width="250px" />
+- Trace code:
+```
+0   Tree-Delete(Tree T, z)
+1   if z.left == NIL (z 的左子樹為 NIL)
+2   Call Transplant(Tree T, z, z.right)
+3   elif z.right == NIL (z 的右子樹為 NIL)
+4   Call Transplant(Tree T, z, z.left)
+5   else Call Tree-Minimum(z.right) (找到 z 的 successor)
+6   if y.p != z (如果 y 沒有接在 z 的腳上)
+7   Call Transplant(Tree T, y, y.right)
+8   y.right = z.right (z 右腳 (r) 改成接在 y 右腳)
+9   y.right.p = y
+10  Call Transplant(Tree T, z, y)
+11  y.left = z.left
+12  y.left.p = y
+```
+- Pseudo code annotation:
+    - line 2: z = node to be deleted, z.right = replaced node
+    - line 4: z = node to be deleted, z.left = replaced node
+    - line 7: y = node to be deleted, z.right = replaced node
+    - line 8 - 9: 更新 y & r 上對下及下對上的關係
+    - line 10: z = node to be deleted, y = replaced node
+    - line 11 - 12: 更新 y & l 上對下及下對上的關係
+- Graphic explanation:
+    - Case A:
+    <br><img src="Week 7\Tree-Deletion-Pseudo-CaseA.PNG" width="200px" />
+    - Case B:
+    <br><img src="Week 7\Tree-Deletion-Pseudo-CaseB.PNG" width="200px" />
+    - Case C:
+    <br><img src="Week 7\Tree-Deletion-Pseudo-CaseC.PNG" width="530px" />
+    - Case D:
+    <br><img src="Week 7\Tree-Deletion-Pseudo-CaseD.PNG" width="550px" />
+
+## Red-Black Trees
+### Balanced Search Trees: Red-Black Trees
+- Add **color** field to nodes of binary trees
+- **Red-black tree properties:**
+    - Every node is either <font color=#00FFFF>red</font> or black
