@@ -176,7 +176,7 @@
 
 ### Tree Deletion
 - Pseudo code:
-<br><img src="Week 7\Tree-Deletion-3.PNG" width="450px" />
+<br><img src="Week 7\Tree-Deletion-3.PNG" width="380px" />
 <br><img src="Week 7\Tree-Minimum.PNG" width="250px" />
 - Trace code:
 ```
