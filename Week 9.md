@@ -1,4 +1,4 @@
-# Week 8 write-up
+# Week 9 write-up
 ## Administrative matters
 - Next week is the midterm exam, please go back and practice the exercises you did on the previous homework, otherwise you won't be able to finish it
 - In order to provide a more comfortable examination environment for everyone, the midterm exam will be held at IB-501
