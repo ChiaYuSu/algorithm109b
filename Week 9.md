@@ -23,7 +23,7 @@
 ### Optimal Substructure for LCS (LCS 最佳子結構)
 - Let *X<sub>m</sub>* = *<x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>m</sub>>* and *Y<sub>n</sub>* = *<y<sub>1</sub>, y<sub>2</sub>, ..., y<sub>n</sub>>* be sequences, and *Z<sub>k</sub>* = *<z<sub>1</sub>, z<sub>2</sub>, ..., z<sub>k</sub>>* be LCS of *X<sub>m</sub>* and *Y<sub>n</sub>*
     - Case 1: *x<sub>m</sub>* = *y<sub>n</sub>*
-    <br><img src="Week 9\LCS_Case_1.PNG" width="300px" />
+    <br><img src="Week 9\LCS_Case_1.PNG" width="350px" />
     - Case 2: *x<sub>m</sub>* ≠ *y<sub>n</sub>*
         - *z<sub>k</sub>* may not be *x<sub>m</sub>*
         <br><img src="Week 9\LCS_Case_2_1.PNG" width="200px" />
