@@ -197,4 +197,4 @@
     - **Use queue for gray vertices**
     - **Time complexity: *O(V+E)* (adjacency list)**
 - Graphic explanation:
-<br><img src="Week 13\BFS_graph.PNG" height="1200px"/>
+<br><img src="Week 13\BFS_graph.PNG" height="1300px"/>
