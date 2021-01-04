@@ -196,5 +196,234 @@
     - `?.𝝿`: predecessor of ?
     - **Use queue for gray vertices**
     - **Time complexity: *O(V+E)* (adjacency list)**
+        - **Each vertex is enqueued and dequeued once: *O(V)* time**
+        - **Each edge is considered once: *O(E)* time**
+    - Breadth-first tree:
+        - *G<sub>𝝿</sub> = (V<sub>𝝿</sub>, E<sub>𝝿</sub>)*
+        - *V<sub>𝝿</sub> = {v ∈ V | 𝝿[v] ≠ NIL} ∪ {s}*
+        - *E<sub>𝝿</sub> = {(𝝿[v], v) ∈ E | v ∈ V<sub>𝝿</sub> - {s}}*
 - Graphic explanation:
 <br><img src="Week 13\BFS_graph.PNG" height="1300px"/>
+
+### Depth-First Search (DFS)
+- Pseudo code:
+<br><img src="Week 13\DFS.PNG" />
+- Trace code:
+```
+0   DFS(Graph)
+1   for each vertex u ∈ G.V
+2       u.color = WHITE
+3       u.𝝿 = NIL
+4   time = 0
+5   (u ∈ G.V) is True
+6   (u.color == WHITE) is True
+7   Call DFS-Visit(Graph, u)
+-----
+0   DFS-Visit(Graph, u)
+1   time = 1
+2   u.d = 1
+3   u.color = GRAY
+4   (v ∈ G.Adj[u]) is True
+5   (v.color == WHITE) is True
+6   v.𝝿 = u
+7   Call DFS-Visit(Graph, v)
+-----
+0   DFS-Visit(Graph, v)
+1   time = 2
+2   v.d = 2
+3   v.color = GRAY
+4   (y ∈ G.Adj[v]) is True
+5   (y.color == WHITE) is True
+6   y.𝝿 = v
+7   Call DFS-Visit(Graph, y)
+-----
+0   DFS-Visit(Graph, y)
+1   time = 3
+2   y.d = 3
+3   y.color = GRAY
+4   (x ∈ G.Adj[y]) is True
+5   (x.color == WHITE) is True
+6   x.𝝿 = y
+7   Call DFS-Visit(Graph, x)
+-----
+0   DFS-Visit(Graph, x)
+1   time = 4
+2   x.d = 4
+3   x.color = GRAY
+4   (v ∈ G.Adj[x]) is True
+5   (v.color == WHITE) is False, go to line 8
+8   x.color = BLACK
+9   time = 5
+10  x.f = 5, return back to DFS line 5
+-----
+5   (y ∈ G.V) is True
+6   (y.color == WHITE) is False
+    y.color = BLACK
+    y.f = 6
+    go back to line 5
+-----
+5   (v ∈ G.V) is True
+6   (v.color == WHITE) is False
+    v.color = BLACK
+    v.f = 7
+    go back to line 5
+-----
+5   (u ∈ G.V) is True
+6   (u.color == WHITE) is False
+    u.color = BLACK
+    u.f = 8
+    go back to line 5
+-----
+5   (w ∈ G.V) is True
+6   (w.color == WHITE) is True
+7   Call DFS-Visit(Graph, w)
+-----
+0   DFS-Visit(Graph, w)
+1   time = 9
+2   w.d = 9
+3   w.color = GRAY
+4   (y ∈ G.Adj[w]) is True
+5   (y.color == WHITE) is False, go back to line 4
+-----
+4   (z ∈ G.Adj[w]) is True
+5   (z.color == WHITE) is True
+6   z.𝝿 = w
+7   Call DFS-Visit(Graph, z)
+-----
+0   DFS-Visit(Graph, z)
+1   time = 10
+2   z.d = 10
+3   z.color = GRAY
+4   (z ∈ G.Adj[z]) is True
+5   (z.color == WHITE) is False
+8   z.color = BLACK
+9   time = 11
+10  z.f = 11, return back to DFS line 5
+-----
+5   (w ∈ G.V) is True
+6   (w.color == WHITE) is False
+    w.color = BLACK
+    w.f = 12
+    Finally complete
+```
+- Pseudo code annotation:
+    - `DFS(G)` Line 1-4: Initial the graph
+    - color means:
+        - white (**undiscovered**)
+        - gray (**discovered**)
+        - black (**explored:** out edges are all discovered) 
+    - `?.d`: discovery time **(gray)**
+    - `?.f`: finishing time **(black)**
+    - `?.𝝿`: predecessor
+    - **Time complexity: *O(V+E)* (adjacency list)**
+    - Depth-first forest:
+        - *G<sub>𝝿</sub> = (V, E<sub>𝝿</sub>)*
+        - *E<sub>𝝿</sub> = {(𝝿[v], v) ∈ E | v ∈ V, 𝝿[v] ≠ NIL}*
+- Graphic explanation:
+<br><img src="Week 13\DFS_graph.PNG" />
+<br><img src="Week 13\DFS_graph_2.PNG" />
+
+### BFS Application: Lee's Maze Router (繞線)
+- Find a path from S to T by **wave propagation**
+- Discuss mainly on single-layer (單層) routing
+- Strength: Guarantee to find a minimum-length connection between 2 terminals if it exists (保證在兩個端子之間找到**最小長度**的連接，如果存在的話)
+- Weakness: Time & space complexity for an *M * N* grid: *O(MN)* **(huge!!!)**
+<br><img src="Week 13\Lee_Maze.PNG" />
+
+### BFS + DFS: Soukup's Maze Router
+- Depth-first (line) search is first directed toward target *T* until an obstacle or *T* is reached (深度優先搜尋首先指向目標 *T*，直到碰到障礙物或 *T*)
+- Breadth-first (Lee-type) search is used to **bubble around** an obstacle if an obstacle is reached (如果碰到障礙物，則使用廣度優先搜尋在障礙物周圍 Bubble)
+- Time and space complexities: *O(MN)*, but 10-50 times faster than Lee's algorithm
+- Find a path between *S* and *T*, but **may not be the shortest** (不保證一定是最短路徑)
+
+## Topological Sort and Strongly Connected Component
+### Topological Sort
+- A topological sort of a **directed acyclic graph (DAG) (有向無圈)** *G = (V, E)* is a linear ordering of *V* subject to (滿足) *(u, v) ∈ E → u* appears before *v*
+    - Directed cyclic graph:
+    <br><img src="Week 13\directed_acyclic.PNG" />
+    - A directed graph *G* is acyclic ⟺ *G* has no back edge
+    - No linear ordering is possible if a graph is not acyclic (如果圖是循環的，則不可能進行線性排序)
+    - **Time complexity: *O(V+E)* (adjacency list)**
+
+### Topological Sort (cont'd)
+- Pseudo code:
+<br><img src="Week 13\topological.PNG" />
+- Graphic explanation:
+<br><img src="Week 13\topological_graph.PNG" />
+    - Vertices are arranged from **left to right** in order of **decreasing** finishing times
+
+### Strongly Connected Component (SCC)
+- A **strongly connected component (SCC)** of a directed graph *G = (V, E)* is a **maximal** set of vertices *U ⊆ V* subject to *u → v, v → u* (*u* and *v* are reachable from each other)
+    - *G<sup>T</sup> = (V, E<sup>T</sup>)*: transpose of *G*, where *E<sup>T</sup> = {(u, v):(v, u) ∈ E}*
+    - *u* and *v* are reachable from each other in *G* ⟺ *u* and *v* are reachable from each other in *G<sup>T</sup>*
+    - Time complexity: *O(V+E)* (adjacency list)
+- **There must be no cycle between different SCCs. If there is a cycle, the two components must be merged (不同 SCC 之間一定不存在 cycle，如果存在 cycle 須將兩個 components 合併)**
+
+### SCC Example
+- Pseudo code:
+<br><img src="Week 13\SCC.PNG" />
+- Trace code:
+```
+1  call DFS(G) to compute finishing time u.f, and sort u.f from big to small
+2  call DFS(Transpose G), but consider the verticies in order of decreasing u.f
+3  output the verticies of each tree in the depth-first forest of step 2 as a separate strongly connected component
+```
+- Graphic explanation:
+<br><img src="Week 13\SCC_graph.PNG" />
+
+## Minimum Spanning Tree (MST) (最小生成樹)
+### Minimum Spanning Tree (MST)
+- Given an undirected graph *G = (V, E)* with weights on the edges, a **minimum spanning tree (MST)** of *G* is a subset *T ⊆ E* such that
+    - *T* is connected and has no cycles (沒有循環)
+    - *T* covers (spans) all vertices in *V* (*T* 覆蓋 *V* 中的所有頂點)
+    - sum of the weights of all edges in *T* is minimum (*T* 中所有邊的權重之和最小)
+- |*T*| = |*V*| - 1
+- Applications: **circuit interconnection (電路互連)** (minimizing tree radius), **communication network** (minimizing tree diameter), etc
+<br><img src="Week 13\MST.PNG" />
+
+### Growing a Minimum Spanning Tree (MST)
+- Grows an MST by adding one safe edge at a time (通過一次添加一個安全邊來增加 MST)
+    - The addition of a safe edge makes *A* a subset of some minimum spanning tree (建立一個用來收集「所有 MST 中的 edge」之集合，稱為 Set *A*)
+- A cut (*S, V-S*) of a graph *G = (V, E)* is a partition of *V*
+- An edge *(u, v) ∈ E* crosses the cut *(S, V-S)* if one of its endpoints is in *S* and the other is in *V-S*
+- A cut respects the set *A* of edges if no edges in *A* crosses the cut
+- An edge is a light edge crossing a cut if **its weight is the minimum of any edge crossing the cut**
+- **A light edge crossing the cut (*S, V-S*) is safe for *A***
+
+
+### Example of MST
+- Find the minimum spanning tree:
+<br><img src="Week 13\find_MST.PNG" />
+- Cut property:
+<br><img src="Week 13\find_MST_cut.PNG" />
+- Crossing edge:
+<br><img src="Week 13\find_MST_crossing_edge.PNG" />
+- Light edge:
+<br><img src="Week 13\find_MST_light_edge.PNG" />
+
+### Kruskal's MST Algorithm
+- Kruskal's MST Algorithm is the most famous MST Algorithm
+- Pseudo code:
+<br><img src="Week 13\kruskal.PNG" />
+- Pseudo code annotation:
+    - Add a safe edge at a time to the growing forest by finding an edge of least weight (from those connecting two trees in the forest)
+    - Line 6: `Find-Set(u) ≠ Find-Set(v)` (節點 *u* 和節點 *v* 不在同一個子樹)
+- Graphic explanation:
+<br><img src="Week 13\kruskal_graph.PNG" />
+
+### Prim's (Prim-Dijkstra's?) MST Algorithm
+- Pseudo code:
+<br><img src="Week 13\MST_Prim.PNG" />
+- Trace code:
+```
+0   MST-Prim(G, w, r)
+1   for each vertex u ∈ G.V
+2   u.key = ∞
+3   u.𝝿 = NIL
+4   r.key = 0
+5   Q = G.V
+6   while Q ≠ ∅
+7   
+```
+
+ 

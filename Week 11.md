@@ -114,6 +114,7 @@ moment* (貪婪演算法總是會做出目前**看起來**最好的選擇)
     | has **optimal substructure** | has **optimal substructure** |
     | make a greedy choice before solving the subproblem (沒有解掉 subproblem，只是無腦的選擇看起來最佳的解) | make an informed choice after getting optimal solutions to subproblems |
     | **no overlapping** subproblems | **dependent** or **overlapping** subproblems |
+    
     <img src="Week 11\DP_vs_Greedy.PNG" /><br>
     > Reference: [Yun-Nung Vivian Chen @ NTU CSIE](https://www.youtube.com/watch?v=y2vumSxk_gE)
 
